@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondFragment">
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buycoffee"
+        android:layout_margin="24dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textview_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="description"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/textview_name"
+        app:layout_constraintTop_toBottomOf="@id/textview_name" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/textview_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/img"
+        app:layout_constraintLeft_toLeftOf="@id/textview_description"
+        app:layout_constraintTop_toBottomOf="@id/textview_description"
+        android:layout_marginTop="24dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_x"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="X"
+        android:textSize="40sp"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintLeft_toRightOf="@id/textview_icon"
+        app:layout_constraintTop_toBottomOf="@id/textview_description" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
+        style="@style/MyTextInputLayout"
+        app:layout_constraintLeft_toRightOf="@id/textview_x"
+        app:layout_constraintTop_toBottomOf="@id/textview_description"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amount_input"
+            android:hint="Amount"
+            android:textColor="@color/black"
+            android:inputType="numberDecimal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+           />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/comment_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        style="@style/MyTextInputLayout"
+        app:layout_constraintLeft_toLeftOf="@id/textview_icon"
+        app:layout_constraintTop_toBottomOf="@id/amount_layout"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/comment_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="8"
+            android:textColor="@color/black"
+            android:maxLines="10"
+            android:scrollbars="vertical"
+            android:hint="Say something nice ( Optional )"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/button_second"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/support"
+        android:layout_margin="24dp"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/comment_layout" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
