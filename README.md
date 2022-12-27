@@ -1,5 +1,5 @@
 # Buy Me A Coffee Celo-Dapp
-Buy me A coffee Celo Dapp is a mobile application that interact with the Celo Java SDK to interact with the Celo Contract kit. The connects to the Valora or Alfajores wallet to enable payment to any of the selected Creator/Beneficiary.
+Buy me A coffee Celo Dapp is a mobile application that interact with the Celo Java SDK Contract kit. The dApp connects to Valora or Alfajores wallet to enable payment to any of the selected Creator/Beneficiary using deeplink.
 
 # dApp UI
 ![mockup](https://user-images.githubusercontent.com/23031920/209605073-df58fad0-67ab-4319-9a66-b78866170e16.png)
