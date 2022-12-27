@@ -16,10 +16,10 @@ Buy me A coffee Celo Dapp is a mobile application that interact with the Celo Ja
 - Once you open the project on Android studio build the project and click on the run button to run the app
 
 # Demo
-Here is a [demo apk]() to test the app on your android device
+Here is a [demo apk](https://drive.google.com/file/d/1LgT-EBnFQ159KveE_mrZ4VuO1dsFQEaz/view?usp=share_link) to test the app on your android device
 
 # License
-Distributed under the MIT License. See for more information. LICENSE
+Distributed under the MIT License. See for more information. [LICENSE](https://github.com/gconnect/Buyme-A-Coffee-Celo-Dapp/blob/master/LICENSE)
 
 # Blog
 For more details you can checkout the link to the blog post
