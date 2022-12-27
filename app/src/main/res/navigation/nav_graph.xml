@@ -25,24 +25,5 @@
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
-    <fragment
-        android:id="@+id/splashFragment"
-        android:name="com.example.celocoffeeapp.SplashFragment"
-        android:label="fragment_splash"
-        tools:layout="@layout/fragment_splash">
-<!--        <action-->
-<!--            -->
-<!--            />-->
-        <action
-            android:id="@+id/action_splashFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment"
-            app:enterAnim="@anim/nav_default_enter_anim" />
-        <action
-            android:id="@+id/action_splashFragment_to_FirstFragment2"
-            app:destination="@id/FirstFragment"
-            app:popUpTo="@id/splashFragment"
-            app:popUpToInclusive="true"
-            app:launchSingleTop="true" />
-    </fragment>
 
 </navigation>

@@ -49,7 +49,6 @@ public class BeneficiaryAccountBalance {
             try {
 //                System.out.println("Waiting for the Future to complete ...");
                 Long returnValue = result.get();
-//                System.out.println("returnvalue" + returnValue);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } catch (ExecutionException e) {

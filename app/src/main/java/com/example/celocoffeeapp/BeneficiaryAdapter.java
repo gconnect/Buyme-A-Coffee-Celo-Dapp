@@ -40,6 +40,7 @@ public class BeneficiaryAdapter extends RecyclerView.Adapter<BeneficiaryAdapter.
         holder.name.setText(listdata[position].getName());
         holder.description.setText(listdata[position].getDescription());
         holder.donation_received.setText(String.valueOf(String.format("Donations Received: %s", BeneficiaryAccountBalance.balance(position, listdata))));
+//        holder.donation_received.setText(String.valueOf(String.format("Donations Received: %s", 1)));
         holder.button.setText(String.format(listdata[position].getWalletAddress().substring(0, 5) + "..."  + "%s" , "Donate"));
         holder.button.setOnClickListener(new View.OnClickListener() {
             @Override

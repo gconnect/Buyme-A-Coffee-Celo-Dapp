@@ -76,6 +76,7 @@ public class FirstFragment extends Fragment implements BeneficiaryAdapter.ItemCl
                         String acct = gson.toJson(balance, AccountBalance.class);
                         System.out.println( "acct details" + acct);
                         System.out.println("cUSD balance " + balance.cUSD);
+                        System.out.println("Celo balance " + balance.CELO);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
